@@ -9,8 +9,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let toDoItems: [ToDoItem] = [
+        ToDoItem(title: "Title 1", description: "Description 1", status: .todo),
+        ToDoItem(title: "Title 2", status: .active)
+    ]
+    
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            ToDoListItemList(toDoItems: toDoItems)
+            .navigationBarTitle("To-Do list")
+        }
     }
 }
 

@@ -15,6 +15,10 @@
 		5C97E9FF24658C7F00B69DBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C97E9FD24658C7F00B69DBB /* LaunchScreen.storyboard */; };
 		5C97EA0A24658C7F00B69DBB /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C97EA0924658C7F00B69DBB /* ToDoListTests.swift */; };
 		5C97EA1524658C7F00B69DBB /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C97EA1424658C7F00B69DBB /* ToDoListUITests.swift */; };
+		5C97EA242465943800B69DBB /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C97EA232465943800B69DBB /* ToDoItem.swift */; };
+		5C97EA26246594B000B69DBB /* ToDoItemStatusEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C97EA25246594B000B69DBB /* ToDoItemStatusEnum.swift */; };
+		5C97EA292465A09B00B69DBB /* ToDoListItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C97EA282465A09B00B69DBB /* ToDoListItemDetails.swift */; };
+		5C97EA2B2465A64F00B69DBB /* ToDoListItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C97EA2A2465A64F00B69DBB /* ToDoListItemList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		5C97EA1024658C7F00B69DBB /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C97EA1424658C7F00B69DBB /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		5C97EA1624658C7F00B69DBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C97EA232465943800B69DBB /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		5C97EA25246594B000B69DBB /* ToDoItemStatusEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemStatusEnum.swift; sourceTree = "<group>"; };
+		5C97EA282465A09B00B69DBB /* ToDoListItemDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemDetails.swift; sourceTree = "<group>"; };
+		5C97EA2A2465A64F00B69DBB /* ToDoListItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,8 @@
 		5C97E9F124658C7C00B69DBB /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				5C97EA272465A08100B69DBB /* Views */,
+				5C97EA222465941700B69DBB /* Models */,
 				5C97E9F224658C7C00B69DBB /* AppDelegate.swift */,
 				5C97E9F424658C7C00B69DBB /* SceneDelegate.swift */,
 				5C97E9F624658C7C00B69DBB /* ContentView.swift */,
@@ -134,6 +144,24 @@
 				5C97EA1624658C7F00B69DBB /* Info.plist */,
 			);
 			path = ToDoListUITests;
+			sourceTree = "<group>";
+		};
+		5C97EA222465941700B69DBB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C97EA232465943800B69DBB /* ToDoItem.swift */,
+				5C97EA25246594B000B69DBB /* ToDoItemStatusEnum.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5C97EA272465A08100B69DBB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5C97EA282465A09B00B69DBB /* ToDoListItemDetails.swift */,
+				5C97EA2A2465A64F00B69DBB /* ToDoListItemList.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +296,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C97E9F324658C7C00B69DBB /* AppDelegate.swift in Sources */,
+				5C97EA292465A09B00B69DBB /* ToDoListItemDetails.swift in Sources */,
 				5C97E9F524658C7C00B69DBB /* SceneDelegate.swift in Sources */,
+				5C97EA26246594B000B69DBB /* ToDoItemStatusEnum.swift in Sources */,
+				5C97EA242465943800B69DBB /* ToDoItem.swift in Sources */,
+				5C97EA2B2465A64F00B69DBB /* ToDoListItemList.swift in Sources */,
 				5C97E9F724658C7C00B69DBB /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
