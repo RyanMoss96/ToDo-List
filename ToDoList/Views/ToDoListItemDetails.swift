@@ -12,8 +12,14 @@ struct ToDoListItemDetails: View {
     
     let toDoItem: ToDoItem
     
+    @State private var test: String = ""
+
     var body: some View {
-        Text(toDoItem.title)
+        VStack {
+            Text(test)
+            TextField("Test", text: $test)
+        }
+        .navigationBarTitle(Text(toDoItem.title), displayMode: .inline)
     }
 }
 

@@ -18,7 +18,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ToDoListItemList(toDoItems: toDoItems)
-            .navigationBarTitle("To-Do list")
+                .navigationBarTitle("To-Do List")
         }
     }
 }

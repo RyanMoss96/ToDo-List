@@ -13,12 +13,24 @@ struct ToDoListItemList: View {
     let toDoItems: [ToDoItem]
     
     var body: some View {
-        List(toDoItems) { toDoItem in
-            NavigationLink(destination: ToDoListItemDetails(toDoItem: toDoItem)) {
-                VStack(alignment: .leading) {
-                    Text(toDoItem.title)
-                    Text(self.descriptionPresent(description: toDoItem.description))
-                        .font(.subheadline)
+        VStack {
+            Form {
+                Section(header: Text("Categories")) {
+                    List(toDoItems) { toDoItem in
+                        NavigationLink(destination: ToDoListItemDetails(toDoItem: toDoItem)) {
+                            VStack(alignment: .leading) {
+                                Text(toDoItem.title)
+                                Text(self.descriptionPresent(description: toDoItem.description))
+                                    .font(.subheadline)
+                            }
+                        }
+                    }
+                }
+                
+                Section {
+                    NavigationLink(destination: CreateNewToDoListItemView()) {
+                        Text("Add New Item")
+                    }
                 }
             }
         }
